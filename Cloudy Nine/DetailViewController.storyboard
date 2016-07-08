@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sWe-s9-cSB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="ue9-gr-xxk">
+            <objects>
+                <viewController id="sWe-s9-cSB" customClass="DetailViewController" customModule="Cloudy_Nine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k4x-Yu-keU"/>
+                        <viewControllerLayoutGuide type="bottom" id="dQc-Zi-Iny"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GMU-JT-7mo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzC-ny-as1">
+                                <rect key="frame" x="553" y="28" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="sWe-s9-cSB" eventType="touchUpInside" id="pQ9-d3-b4Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0004047529727" green="1" blue="0.47005809430000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DzC-ny-as1" firstAttribute="top" secondItem="k4x-Yu-keU" secondAttribute="bottom" constant="8" id="Gm9-NJ-EWp"/>
+                            <constraint firstAttribute="trailing" secondItem="DzC-ny-as1" secondAttribute="trailing" constant="8" id="hII-4Z-Xee"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pmG-Va-gmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="364"/>
+        </scene>
+    </scenes>
+</document>
