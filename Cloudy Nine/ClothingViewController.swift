@@ -22,7 +22,7 @@ class ClothingViewController: UIViewController {
     }
 }
 
-// MARK Private implementation
+// MARK: Private implementation
 
 private extension ClothingViewController {
 

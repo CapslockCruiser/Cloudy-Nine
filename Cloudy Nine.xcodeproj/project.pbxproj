@@ -18,6 +18,9 @@
 		642FB7491D301FF900E91A1E /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB7481D301FF900E91A1E /* APIKey.swift */; };
 		642FB74E1D3020B600E91A1E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB74D1D3020B600E91A1E /* DetailViewController.swift */; };
 		642FB7501D3020D700E91A1E /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642FB74F1D3020D700E91A1E /* DetailViewController.storyboard */; };
+		642FB7521D30295700E91A1E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB7511D30295700E91A1E /* OnboardingViewController.swift */; };
+		642FB7541D30296200E91A1E /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642FB7531D30296200E91A1E /* OnboardingViewController.storyboard */; };
+		642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		642FB7481D301FF900E91A1E /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		642FB74D1D3020B600E91A1E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		642FB74F1D3020D700E91A1E /* DetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
+		642FB7511D30295700E91A1E /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		642FB7531D30296200E91A1E /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
+		642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnableLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,9 @@
 				3D6E5BEE1D2DABFB00A668FD /* ClothingViewController.storyboard */,
 				642FB74D1D3020B600E91A1E /* DetailViewController.swift */,
 				642FB74F1D3020D700E91A1E /* DetailViewController.storyboard */,
+				642FB7511D30295700E91A1E /* OnboardingViewController.swift */,
+				642FB7531D30296200E91A1E /* OnboardingViewController.storyboard */,
+				642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */,
 			);
 			name = "View controllers";
 			sourceTree = "<group>";
@@ -268,6 +277,7 @@
 				642FB7501D3020D700E91A1E /* DetailViewController.storyboard in Resources */,
 				3D6E5BF81D2DABFB00A668FD /* LaunchScreen.storyboard in Resources */,
 				3D6E5BF51D2DABFB00A668FD /* Assets.xcassets in Resources */,
+				642FB7541D30296200E91A1E /* OnboardingViewController.storyboard in Resources */,
 				3D6E5BF01D2DABFB00A668FD /* ClothingViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6E5BED1D2DABFB00A668FD /* ClothingViewController.swift in Sources */,
+				642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */,
+				642FB7521D30295700E91A1E /* OnboardingViewController.swift in Sources */,
 				3D6E5BF31D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld in Sources */,
 				642FB74E1D3020B600E91A1E /* DetailViewController.swift in Sources */,
 				642FB7491D301FF900E91A1E /* APIKey.swift in Sources */,
