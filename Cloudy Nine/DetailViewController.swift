@@ -12,6 +12,8 @@ class DetailViewController: UIViewController {
 
 }
 
+// MARK: Private implementation
+
 private extension DetailViewController {
     @IBAction func closeButtonTapped(sender: AnyObject) {
         self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
