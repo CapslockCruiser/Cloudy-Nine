@@ -16,13 +16,23 @@ class EnableLocationViewController: UIViewController {
 
 private extension EnableLocationViewController {
     @IBAction func enableLocationButtonTapped(sender: AnyObject) {
+        let locationManager = LocationManager.shared
+        locationManager.permissionDelegate = self
+        locationManager.requestAuthorization()
+    }
+}
+
+// MARK: LocationManagerDelegate
+
+extension EnableLocationViewController: LocationManagerPermissionDelegate {
+    func userDidGrantLocationPermission() {
         guard
             let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate,
             let clothingViewController = UIStoryboard(name: "ClothingViewController", bundle: nil).instantiateInitialViewController() else
         {
             return
         }
-
+        
         appDelegate.transitionToViewController(clothingViewController)
     }
 }

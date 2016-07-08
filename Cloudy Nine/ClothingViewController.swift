@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ClothingViewController: UIViewController {
 
@@ -15,15 +16,38 @@ class ClothingViewController: UIViewController {
     @IBOutlet private weak var titleLabel: UINavigationItem!
     @IBOutlet private weak var detailsButton: UIBarButtonItem!
 
+    private let geocoder = Geocoder()
+
     // MARK: UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: #selector(userDidUpdateLocation),
+            name: LocationManager.LocationUpdateNotificationName,
+            object: nil
+        )
+
+        LocationManager.shared.start()
+    }
+
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
 }
 
 // MARK: Private implementation
 
 private extension ClothingViewController {
+    @objc func userDidUpdateLocation(notification: NSNotification) {
+        guard let location = notification.userInfo?[LocationManager.LocationUpdateNotificationLocationKey] as? CLLocation else {
+            return
+        }
 
+        geocoder.cityFromLocation(location) { city in
+            self.titleLabel.title = city
+        }
+    }
 }

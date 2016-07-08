@@ -21,6 +21,9 @@
 		642FB7521D30295700E91A1E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB7511D30295700E91A1E /* OnboardingViewController.swift */; };
 		642FB7541D30296200E91A1E /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642FB7531D30296200E91A1E /* OnboardingViewController.storyboard */; };
 		642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */; };
+		642FB7581D303D4700E91A1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642FB7571D303D4700E91A1E /* CoreLocation.framework */; };
+		642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB75B1D303E1E00E91A1E /* LocationManager.swift */; };
+		642FB75E1D30471000E91A1E /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB75D1D30471000E91A1E /* Geocoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		642FB7511D30295700E91A1E /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		642FB7531D30296200E91A1E /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
 		642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnableLocationViewController.swift; sourceTree = "<group>"; };
+		642FB7571D303D4700E91A1E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		642FB75B1D303E1E00E91A1E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		642FB75D1D30471000E91A1E /* Geocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642FB7581D303D4700E91A1E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,10 +118,12 @@
 		3D6E5BE91D2DABFB00A668FD /* Cloudy Nine */ = {
 			isa = PBXGroup;
 			children = (
+				642FB75A1D303E1000E91A1E /* Helpers */,
 				3D6E5BEA1D2DABFB00A668FD /* AppDelegate.swift */,
 				642FB74A1D30207900E91A1E /* View controllers */,
 				642FB74B1D30208900E91A1E /* Other */,
 				642FB74C1D30208F00E91A1E /* Data model */,
+				642FB7591D303D9000E91A1E /* Frameworks */,
 			);
 			path = "Cloudy Nine";
 			sourceTree = "<group>";
@@ -168,6 +177,23 @@
 				3D6E5BF11D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld */,
 			);
 			name = "Data model";
+			sourceTree = "<group>";
+		};
+		642FB7591D303D9000E91A1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				642FB7571D303D4700E91A1E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		642FB75A1D303E1000E91A1E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				642FB75B1D303E1E00E91A1E /* LocationManager.swift */,
+				642FB75D1D30471000E91A1E /* Geocoder.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,8 +333,10 @@
 				642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */,
 				642FB7521D30295700E91A1E /* OnboardingViewController.swift in Sources */,
 				3D6E5BF31D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld in Sources */,
+				642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */,
 				642FB74E1D3020B600E91A1E /* DetailViewController.swift in Sources */,
 				642FB7491D301FF900E91A1E /* APIKey.swift in Sources */,
+				642FB75E1D30471000E91A1E /* Geocoder.swift in Sources */,
 				3D6E5BEB1D2DABFB00A668FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
