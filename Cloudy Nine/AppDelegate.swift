@@ -17,10 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - UIApplicationDelegate
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let onboardingViewController = UIStoryboard(name: "OnboardingViewController", bundle: nil).instantiateInitialViewController()
+        var initialViewController: UIViewController?
+
+        if LocationManager.shared.permissionGranted {
+            initialViewController = UIStoryboard(name: "ClothingViewController", bundle: nil).instantiateInitialViewController()
+        } else {
+            initialViewController = UIStoryboard(name: "OnboardingViewController", bundle: nil).instantiateInitialViewController()
+        }
 
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = onboardingViewController
+        window?.rootViewController = initialViewController
         window?.makeKeyAndVisible()
 
         return true
