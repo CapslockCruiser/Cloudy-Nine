@@ -20,19 +20,19 @@ class OWMAPIClient{
     let currentWeatherURL: NSURL! = NSURL(string: "http://api.openweathermap.org/data/2.5/weather?")
     let fiveDayWeatherURL: NSURL! = NSURL(string: "http://api.openweathermap.org/data/2.5/forecast?")
 
-    func getCurrentWeather(location: CLLocation){
+    func getCurrentWeather(location: CLLocation, success: [WeatherData] -> Void){
 
-        getWeather(location, current: true)
+        getWeather(location, current: true, success: success)
         
     }
     
-    func getFiveDay(location: CLLocation){
+    func getFiveDay(location: CLLocation, success: [WeatherData] -> Void){
         
-        getWeather(location, current: false)
+        getWeather(location, current: false, success: success)
         
     }
     
-    func getWeather(location: CLLocation, current: Bool){
+    func getWeather(location: CLLocation, current: Bool, success: [WeatherData] -> Void){
         
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         var component: NSURLComponents!

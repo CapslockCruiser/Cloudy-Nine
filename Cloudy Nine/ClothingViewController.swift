@@ -17,6 +17,7 @@ class ClothingViewController: UIViewController {
     @IBOutlet private weak var detailsButton: UIBarButtonItem!
 
     private let geocoder = Geocoder()
+    var weatherData: [WeatherData] = []
 
     // MARK: UIViewController
 
@@ -51,6 +52,8 @@ private extension ClothingViewController {
             self.titleLabel.title = city
         }
         
-        OWMAPIClient.shared.getCurrentWeather(location)
+        OWMAPIClient.shared.getCurrentWeather(location, success: { weatherData in
+            self.weatherData = weatherData
+        })
     }
 }
