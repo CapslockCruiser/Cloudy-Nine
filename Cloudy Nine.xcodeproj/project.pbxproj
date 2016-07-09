@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D6703501D304EE80069155E /* OWMAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67034F1D304EE80069155E /* OWMAPIClient.swift */; };
+		3D6703541D30AC140069155E /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6703531D30AC140069155E /* WeatherData.swift */; };
 		3D6E5BEB1D2DABFB00A668FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEA1D2DABFB00A668FD /* AppDelegate.swift */; };
 		3D6E5BED1D2DABFB00A668FD /* ClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEC1D2DABFB00A668FD /* ClothingViewController.swift */; };
 		3D6E5BF01D2DABFB00A668FD /* ClothingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEE1D2DABFB00A668FD /* ClothingViewController.storyboard */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D67034F1D304EE80069155E /* OWMAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWMAPIClient.swift; sourceTree = "<group>"; };
+		3D6703531D30AC140069155E /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		3D6E5BE71D2DABFB00A668FD /* Cloudy Nine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cloudy Nine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6E5BEA1D2DABFB00A668FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D6E5BEC1D2DABFB00A668FD /* ClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 			children = (
 				642FB75B1D303E1E00E91A1E /* LocationManager.swift */,
 				642FB75D1D30471000E91A1E /* Geocoder.swift */,
+				3D67034F1D304EE80069155E /* OWMAPIClient.swift */,
+				3D6703531D30AC140069155E /* WeatherData.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -334,8 +340,10 @@
 				642FB7521D30295700E91A1E /* OnboardingViewController.swift in Sources */,
 				3D6E5BF31D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld in Sources */,
 				642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */,
+				3D6703541D30AC140069155E /* WeatherData.swift in Sources */,
 				642FB74E1D3020B600E91A1E /* DetailViewController.swift in Sources */,
 				642FB7491D301FF900E91A1E /* APIKey.swift in Sources */,
+				3D6703501D304EE80069155E /* OWMAPIClient.swift in Sources */,
 				642FB75E1D30471000E91A1E /* Geocoder.swift in Sources */,
 				3D6E5BEB1D2DABFB00A668FD /* AppDelegate.swift in Sources */,
 			);

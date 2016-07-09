@@ -31,6 +31,7 @@ class ClothingViewController: UIViewController {
         )
 
         LocationManager.shared.start()
+        
     }
 
     deinit {
@@ -49,5 +50,7 @@ private extension ClothingViewController {
         geocoder.cityFromLocation(location) { city in
             self.titleLabel.title = city
         }
+        
+        OWMAPIClient.shared.getCurrentWeather(location)
     }
 }
