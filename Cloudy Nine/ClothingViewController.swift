@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreLocation
 
 class ClothingViewController: UIViewController {
 
@@ -15,8 +14,6 @@ class ClothingViewController: UIViewController {
 
     @IBOutlet private weak var titleLabel: UINavigationItem!
     @IBOutlet private weak var detailsButton: UIBarButtonItem!
-
-    private let geocoder = Geocoder()
 
     // MARK: UIViewController
 
@@ -40,12 +37,8 @@ class ClothingViewController: UIViewController {
 
 private extension ClothingViewController {
     @objc func userDidUpdateLocation(notification: NSNotification) {
-        guard let location = notification.userInfo?[LocationManager.LocationUpdateNotificationLocationKey] as? CLLocation else {
-            return
-        }
+        let location = LocationManager.shared.location
 
-        geocoder.cityFromLocation(location) { city in
-            self.titleLabel.title = city
-        }
+        titleLabel.title = location?.city
     }
 }
