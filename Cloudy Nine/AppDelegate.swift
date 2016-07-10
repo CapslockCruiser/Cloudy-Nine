@@ -32,6 +32,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    func applicationDidBecomeActive(application: UIApplication) {
+        LocationManager.shared.start()
+    }
+
+    func applicationWillResignActive(application: UIApplication) {
+        LocationManager.shared.stop()
+    }
+
     // MARK: - Public API
 
     func transitionToViewController(viewController: UIViewController) {

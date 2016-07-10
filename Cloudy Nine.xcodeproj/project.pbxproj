@@ -23,7 +23,6 @@
 		642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */; };
 		642FB7581D303D4700E91A1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642FB7571D303D4700E91A1E /* CoreLocation.framework */; };
 		642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB75B1D303E1E00E91A1E /* LocationManager.swift */; };
-		642FB75E1D30471000E91A1E /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB75D1D30471000E91A1E /* Geocoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,6 @@
 		642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnableLocationViewController.swift; sourceTree = "<group>"; };
 		642FB7571D303D4700E91A1E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		642FB75B1D303E1E00E91A1E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		642FB75D1D30471000E91A1E /* Geocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				642FB75B1D303E1E00E91A1E /* LocationManager.swift */,
-				642FB75D1D30471000E91A1E /* Geocoder.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -336,7 +333,6 @@
 				642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */,
 				642FB74E1D3020B600E91A1E /* DetailViewController.swift in Sources */,
 				642FB7491D301FF900E91A1E /* APIKey.swift in Sources */,
-				642FB75E1D30471000E91A1E /* Geocoder.swift in Sources */,
 				3D6E5BEB1D2DABFB00A668FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
