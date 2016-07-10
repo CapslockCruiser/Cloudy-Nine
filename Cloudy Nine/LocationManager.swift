@@ -41,13 +41,17 @@ class LocationManager: NSObject {
 
     // MARK: Public API
 
-    func start() {
+    func start() -> Bool {
         guard permissionGranted else {
-            requestAuthorization()
-            return
+            return false
         }
 
         manager.startMonitoringSignificantLocationChanges()
+        return true
+    }
+
+    func stop() {
+        manager.stopMonitoringSignificantLocationChanges()
     }
 
     func requestAuthorization() {

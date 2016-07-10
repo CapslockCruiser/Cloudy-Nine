@@ -29,8 +29,6 @@ class ClothingViewController: UIViewController {
             name: LocationManager.LocationUpdateNotificationName,
             object: nil
         )
-
-        LocationManager.shared.start()
     }
 
     deinit {
