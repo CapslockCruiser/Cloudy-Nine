@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreLocation
 
 class ClothingViewController: UIViewController {
 
@@ -15,9 +14,6 @@ class ClothingViewController: UIViewController {
 
     @IBOutlet private weak var titleLabel: UINavigationItem!
     @IBOutlet private weak var detailsButton: UIBarButtonItem!
-
-    private let geocoder = Geocoder()
-    var weatherData: [WeatherData] = []
 
     // MARK: UIViewController
 
@@ -30,9 +26,6 @@ class ClothingViewController: UIViewController {
             name: LocationManager.LocationUpdateNotificationName,
             object: nil
         )
-
-        LocationManager.shared.start()
-        
     }
 
     deinit {
@@ -44,16 +37,8 @@ class ClothingViewController: UIViewController {
 
 private extension ClothingViewController {
     @objc func userDidUpdateLocation(notification: NSNotification) {
-        guard let location = notification.userInfo?[LocationManager.LocationUpdateNotificationLocationKey] as? CLLocation else {
-            return
-        }
+        let location = LocationManager.shared.location
 
-        geocoder.cityFromLocation(location) { city in
-            self.titleLabel.title = city
-        }
-        
-        OWMAPIClient.shared.getCurrentWeather(location, success: { weatherData in
-            self.weatherData = weatherData
-        })
+        titleLabel.title = location?.city
     }
 }

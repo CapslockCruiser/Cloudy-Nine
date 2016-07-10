@@ -20,19 +20,19 @@ class OWMAPIClient{
     let currentWeatherURL: NSURL! = NSURL(string: "http://api.openweathermap.org/data/2.5/weather?")
     let fiveDayWeatherURL: NSURL! = NSURL(string: "http://api.openweathermap.org/data/2.5/forecast?")
 
-    func getCurrentWeather(location: CLLocation, success: [WeatherData] -> Void){
+    func getCurrentWeather(location: Location, success: [WeatherData] -> Void){
 
         getWeather(location, current: true, success: success)
         
     }
     
-    func getFiveDay(location: CLLocation, success: [WeatherData] -> Void){
+    func getFiveDay(location: Location, success: [WeatherData] -> Void){
         
         getWeather(location, current: false, success: success)
         
     }
     
-    func getWeather(location: CLLocation, current: Bool, success: [WeatherData] -> Void){
+    func getWeather(location: Location, current: Bool, success: [WeatherData] -> Void){
         
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         var component: NSURLComponents!
@@ -43,8 +43,8 @@ class OWMAPIClient{
         }
         
         component!.queryItems = [
-            NSURLQueryItem.init(name: "lat", value: String(location.coordinate.latitude)),
-            NSURLQueryItem.init(name: "lon", value: String(location.coordinate.longitude)),
+            NSURLQueryItem.init(name: "lat", value: String(location.lat)),
+            NSURLQueryItem.init(name: "lon", value: String(location.lon)),
             NSURLQueryItem.init(name: "appid", value: APIKey.key)]
         
         let request = NSURLRequest(URL: component!.URL!)
