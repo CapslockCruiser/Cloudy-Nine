@@ -9,3 +9,4 @@
 import UIKit
 
 class ClothingViewController: UIViewController, LoadableFromStoryboard {}
+
