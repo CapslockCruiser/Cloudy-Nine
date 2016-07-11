@@ -19,7 +19,7 @@ class GroundView: UIView, LoadableFromInterfaceBuilder, WeatherDrawing {
 
     override func drawRect(rect: CGRect) {
         let path = UIBezierPath(rect: rect)
-        UIColor.greenColor().setFill()
+        UIColor(red: 0.0, green: 100.0/256.0, blue: 0.0, alpha: 1.0).setFill()
         path.fill()
     }
 
