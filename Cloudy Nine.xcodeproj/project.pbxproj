@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D6E5BEB1D2DABFB00A668FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEA1D2DABFB00A668FD /* AppDelegate.swift */; };
-		3D6E5BED1D2DABFB00A668FD /* ClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEC1D2DABFB00A668FD /* ClothingViewController.swift */; };
-		3D6E5BF01D2DABFB00A668FD /* ClothingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEE1D2DABFB00A668FD /* ClothingViewController.storyboard */; };
+		3D6E5BED1D2DABFB00A668FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEC1D2DABFB00A668FD /* MainViewController.swift */; };
+		3D6E5BF01D2DABFB00A668FD /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEE1D2DABFB00A668FD /* MainViewController.storyboard */; };
 		3D6E5BF31D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5BF11D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld */; };
 		3D6E5BF51D2DABFB00A668FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E5BF41D2DABFB00A668FD /* Assets.xcassets */; };
 		3D6E5BF81D2DABFB00A668FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E5BF61D2DABFB00A668FD /* LaunchScreen.storyboard */; };
@@ -45,8 +45,8 @@
 /* Begin PBXFileReference section */
 		3D6E5BE71D2DABFB00A668FD /* Cloudy Nine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cloudy Nine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6E5BEA1D2DABFB00A668FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D6E5BEC1D2DABFB00A668FD /* ClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingViewController.swift; sourceTree = "<group>"; };
-		3D6E5BEF1D2DABFB00A668FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ClothingViewController.storyboard; sourceTree = "<group>"; };
+		3D6E5BEC1D2DABFB00A668FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3D6E5BEF1D2DABFB00A668FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
 		3D6E5BF21D2DABFB00A668FD /* Cloudy_Nine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cloudy_Nine.xcdatamodel; sourceTree = "<group>"; };
 		3D6E5BF41D2DABFB00A668FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D6E5BF71D2DABFB00A668FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -116,11 +116,11 @@
 		3D6E5BE91D2DABFB00A668FD /* Cloudy Nine */ = {
 			isa = PBXGroup;
 			children = (
-				642FB75A1D303E1000E91A1E /* Helpers */,
 				3D6E5BEA1D2DABFB00A668FD /* AppDelegate.swift */,
-				642FB74A1D30207900E91A1E /* View controllers */,
-				642FB74B1D30208900E91A1E /* Other */,
 				642FB74C1D30208F00E91A1E /* Data model */,
+				642FB75A1D303E1000E91A1E /* Helpers */,
+				642FB74B1D30208900E91A1E /* Other */,
+				642FB74A1D30207900E91A1E /* View controllers */,
 				642FB7591D303D9000E91A1E /* Frameworks */,
 			);
 			path = "Cloudy Nine";
@@ -147,8 +147,8 @@
 		642FB74A1D30207900E91A1E /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3D6E5BEC1D2DABFB00A668FD /* ClothingViewController.swift */,
-				3D6E5BEE1D2DABFB00A668FD /* ClothingViewController.storyboard */,
+				3D6E5BEC1D2DABFB00A668FD /* MainViewController.swift */,
+				3D6E5BEE1D2DABFB00A668FD /* MainViewController.storyboard */,
 				642FB74D1D3020B600E91A1E /* DetailViewController.swift */,
 				642FB74F1D3020D700E91A1E /* DetailViewController.storyboard */,
 				642FB7511D30295700E91A1E /* OnboardingViewController.swift */,
@@ -301,7 +301,7 @@
 				3D6E5BF81D2DABFB00A668FD /* LaunchScreen.storyboard in Resources */,
 				3D6E5BF51D2DABFB00A668FD /* Assets.xcassets in Resources */,
 				642FB7541D30296200E91A1E /* OnboardingViewController.storyboard in Resources */,
-				3D6E5BF01D2DABFB00A668FD /* ClothingViewController.storyboard in Resources */,
+				3D6E5BF01D2DABFB00A668FD /* MainViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D6E5BED1D2DABFB00A668FD /* ClothingViewController.swift in Sources */,
+				3D6E5BED1D2DABFB00A668FD /* MainViewController.swift in Sources */,
 				642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */,
 				642FB7521D30295700E91A1E /* OnboardingViewController.swift in Sources */,
 				3D6E5BF31D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld in Sources */,
@@ -369,12 +369,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3D6E5BEE1D2DABFB00A668FD /* ClothingViewController.storyboard */ = {
+		3D6E5BEE1D2DABFB00A668FD /* MainViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3D6E5BEF1D2DABFB00A668FD /* Base */,
 			);
-			name = ClothingViewController.storyboard;
+			name = MainViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		3D6E5BF61D2DABFB00A668FD /* LaunchScreen.storyboard */ = {

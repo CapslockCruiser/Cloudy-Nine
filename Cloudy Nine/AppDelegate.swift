@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var initialViewController: UIViewController?
 
         if LocationManager.shared.permissionGranted {
-            initialViewController = UIStoryboard(name: "ClothingViewController", bundle: nil).instantiateInitialViewController()
+            initialViewController = UIStoryboard(name: "MainViewController", bundle: nil).instantiateInitialViewController()
         } else {
             initialViewController = UIStoryboard(name: "OnboardingViewController", bundle: nil).instantiateInitialViewController()
         }

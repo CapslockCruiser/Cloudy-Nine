@@ -28,11 +28,11 @@ extension EnableLocationViewController: LocationManagerPermissionDelegate {
     func userDidGrantLocationPermission() {
         guard
             let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate,
-            let clothingViewController = UIStoryboard(name: "ClothingViewController", bundle: nil).instantiateInitialViewController() else
+            let MainViewController = UIStoryboard(name: "MainViewController", bundle: nil).instantiateInitialViewController() else
         {
             return
         }
         
-        appDelegate.transitionToViewController(clothingViewController)
+        appDelegate.transitionToViewController(MainViewController)
     }
 }

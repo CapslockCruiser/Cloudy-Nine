@@ -1,5 +1,5 @@
 //
-//  ClothingViewController.swift
+//  MainViewController.swift
 //  Cloudy Nine
 //
 //  Created by William Choi on 7/6/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClothingViewController: UIViewController {
+class MainViewController: UIViewController {
 
     // MARK: Private properties
 
@@ -35,7 +35,7 @@ class ClothingViewController: UIViewController {
 
 // MARK: Private implementation
 
-private extension ClothingViewController {
+private extension MainViewController {
     @objc func userDidUpdateLocation(notification: NSNotification) {
         let location = LocationManager.shared.location
 
