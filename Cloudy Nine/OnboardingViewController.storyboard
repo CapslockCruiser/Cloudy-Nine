@@ -5,36 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="5gi-rb-AVb">
-            <objects>
-                <viewController storyboardIdentifier="WelcomeViewController" id="Yfc-7R-SmC" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="h3d-zN-tMD"/>
-                        <viewControllerLayoutGuide type="bottom" id="og8-Hi-3XC"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JWm-Sy-3Rc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UK-Y9-feU">
-                                <rect key="frame" x="264.5" y="289.5" width="71" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.87727647554591637" green="0.99402107434866505" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="5UK-Y9-feU" firstAttribute="centerX" secondItem="JWm-Sy-3Rc" secondAttribute="centerX" id="DZX-Wm-teN"/>
-                            <constraint firstItem="5UK-Y9-feU" firstAttribute="centerY" secondItem="JWm-Sy-3Rc" secondAttribute="centerY" id="PDz-0Z-OFy"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5dQ-oW-Blw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1180" y="105"/>
-        </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="6oD-LT-Hrs">
             <objects>
@@ -52,37 +22,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLP-7z-xgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="263" y="506"/>
-        </scene>
-        <!--Enable Location View Controller-->
-        <scene sceneID="idV-W7-yBq">
-            <objects>
-                <viewController storyboardIdentifier="EnableLocationViewController" id="ciM-n7-zpr" customClass="EnableLocationViewController" customModule="Cloudy_Nine" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gs4-kE-50m"/>
-                        <viewControllerLayoutGuide type="bottom" id="p3g-rG-LUc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EhB-fP-3AB">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYr-IC-Hzg">
-                                <rect key="frame" x="236" y="285" width="129" height="30"/>
-                                <state key="normal" title="plz enable location"/>
-                                <connections>
-                                    <action selector="enableLocationButtonTapped:" destination="ciM-n7-zpr" eventType="touchUpInside" id="maK-G4-OZb"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0004047529727" green="1" blue="0.47005809430000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="KYr-IC-Hzg" firstAttribute="centerY" secondItem="EhB-fP-3AB" secondAttribute="centerY" id="058-I5-jbJ"/>
-                            <constraint firstItem="KYr-IC-Hzg" firstAttribute="centerX" secondItem="EhB-fP-3AB" secondAttribute="centerX" id="66f-qm-LKC"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zvu-wh-8pG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1180" y="808"/>
         </scene>
     </scenes>
 </document>

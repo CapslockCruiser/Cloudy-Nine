@@ -7,17 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D6703501D304EE80069155E /* OWMAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67034F1D304EE80069155E /* OWMAPIClient.swift */; };
-		3D6703541D30AC140069155E /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6703531D30AC140069155E /* WeatherData.swift */; };
 		3D6E5BEB1D2DABFB00A668FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEA1D2DABFB00A668FD /* AppDelegate.swift */; };
-		3D6E5BED1D2DABFB00A668FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEC1D2DABFB00A668FD /* MainViewController.swift */; };
-		3D6E5BF01D2DABFB00A668FD /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEE1D2DABFB00A668FD /* MainViewController.storyboard */; };
+		3D6E5BED1D2DABFB00A668FD /* ClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEC1D2DABFB00A668FD /* ClothingViewController.swift */; };
+		3D6E5BF01D2DABFB00A668FD /* ClothingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E5BEE1D2DABFB00A668FD /* ClothingViewController.storyboard */; };
 		3D6E5BF31D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5BF11D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld */; };
 		3D6E5BF51D2DABFB00A668FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E5BF41D2DABFB00A668FD /* Assets.xcassets */; };
 		3D6E5BF81D2DABFB00A668FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E5BF61D2DABFB00A668FD /* LaunchScreen.storyboard */; };
 		3D6E5C031D2DABFB00A668FD /* Cloudy_NineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5C021D2DABFB00A668FD /* Cloudy_NineTests.swift */; };
 		3D6E5C0E1D2DABFB00A668FD /* Cloudy_NineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E5C0D1D2DABFB00A668FD /* Cloudy_NineUITests.swift */; };
-		3DD45BB91D33038100A030C0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD45BB81D33038100A030C0 /* SwiftyJSON.framework */; };
 		642FB7491D301FF900E91A1E /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB7481D301FF900E91A1E /* APIKey.swift */; };
 		642FB74E1D3020B600E91A1E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB74D1D3020B600E91A1E /* DetailViewController.swift */; };
 		642FB7501D3020D700E91A1E /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642FB74F1D3020D700E91A1E /* DetailViewController.storyboard */; };
@@ -26,16 +23,7 @@
 		642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */; };
 		642FB7581D303D4700E91A1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642FB7571D303D4700E91A1E /* CoreLocation.framework */; };
 		642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB75B1D303E1E00E91A1E /* LocationManager.swift */; };
-		90748AE2D37AFF32BC4C15D2 /* Pods_Cloudy_Nine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EDE7F3C07CA46372FC8D04 /* Pods_Cloudy_Nine.framework */; };
-		648680A61D33F1000048CBC6 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680A51D33F1000048CBC6 /* ViewUtils.swift */; };
-		648680A81D33F26B0048CBC6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */; };
-		648680AA1D33F2920048CBC6 /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */; };
-		648680AC1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680AB1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard */; };
-		648680B11D33F3750048CBC6 /* BasePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680B01D33F3750048CBC6 /* BasePageViewController.swift */; };
-		648680B31D33F5C90048CBC6 /* ClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680B21D33F5C90048CBC6 /* ClothingViewController.swift */; };
-		648680B71D33F6200048CBC6 /* ClothingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680B61D33F6200048CBC6 /* ClothingViewController.storyboard */; };
-		648680B91D33F63D0048CBC6 /* EmptyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680B81D33F63D0048CBC6 /* EmptyViewController.storyboard */; };
-		648680BB1D33F65F0048CBC6 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680BA1D33F65F0048CBC6 /* EmptyViewController.swift */; };
+		642FB75E1D30471000E91A1E /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB75D1D30471000E91A1E /* Geocoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A2343620CA63EC6E8E0A0B2 /* Pods-Cloudy Nine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudy Nine.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cloudy Nine/Pods-Cloudy Nine.release.xcconfig"; sourceTree = "<group>"; };
-		3D67034F1D304EE80069155E /* OWMAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OWMAPIClient.swift; sourceTree = "<group>"; };
-		3D6703531D30AC140069155E /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		3D6E5BE71D2DABFB00A668FD /* Cloudy Nine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cloudy Nine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6E5BEA1D2DABFB00A668FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D6E5BEC1D2DABFB00A668FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		3D6E5BEF1D2DABFB00A668FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
+		3D6E5BEC1D2DABFB00A668FD /* ClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingViewController.swift; sourceTree = "<group>"; };
+		3D6E5BEF1D2DABFB00A668FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ClothingViewController.storyboard; sourceTree = "<group>"; };
 		3D6E5BF21D2DABFB00A668FD /* Cloudy_Nine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cloudy_Nine.xcdatamodel; sourceTree = "<group>"; };
 		3D6E5BF41D2DABFB00A668FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D6E5BF71D2DABFB00A668FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,7 +58,6 @@
 		3D6E5C091D2DABFB00A668FD /* Cloudy NineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cloudy NineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6E5C0D1D2DABFB00A668FD /* Cloudy_NineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloudy_NineUITests.swift; sourceTree = "<group>"; };
 		3D6E5C0F1D2DABFB00A668FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DD45BB81D33038100A030C0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/Cloudy_Nine-acpdfetooyvsuhfjyyhtglmzgvet/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		642FB7481D301FF900E91A1E /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		642FB74D1D3020B600E91A1E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		642FB74F1D3020D700E91A1E /* DetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
@@ -82,18 +66,7 @@
 		642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnableLocationViewController.swift; sourceTree = "<group>"; };
 		642FB7571D303D4700E91A1E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		642FB75B1D303E1E00E91A1E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		AA5D3614A2F495F211E378F0 /* Pods-Cloudy Nine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudy Nine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cloudy Nine/Pods-Cloudy Nine.debug.xcconfig"; sourceTree = "<group>"; };
-		B3EDE7F3C07CA46372FC8D04 /* Pods_Cloudy_Nine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cloudy_Nine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		648680A51D33F1000048CBC6 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
-		648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
-		648680AB1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EnableLocationViewController.storyboard; sourceTree = "<group>"; };
-		648680B01D33F3750048CBC6 /* BasePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePageViewController.swift; sourceTree = "<group>"; };
-		648680B21D33F5C90048CBC6 /* ClothingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingViewController.swift; sourceTree = "<group>"; };
-		648680B61D33F6200048CBC6 /* ClothingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClothingViewController.storyboard; sourceTree = "<group>"; };
-		648680B81D33F63D0048CBC6 /* EmptyViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EmptyViewController.storyboard; sourceTree = "<group>"; };
-		648680BA1D33F65F0048CBC6 /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
-
+		642FB75D1D30471000E91A1E /* Geocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD45BB91D33038100A030C0 /* SwiftyJSON.framework in Frameworks */,
 				642FB7581D303D4700E91A1E /* CoreLocation.framework in Frameworks */,
-				90748AE2D37AFF32BC4C15D2 /* Pods_Cloudy_Nine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,15 +95,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18689399E604FF4A33F953B2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DD45BB81D33038100A030C0 /* SwiftyJSON.framework */,
-				B3EDE7F3C07CA46372FC8D04 /* Pods_Cloudy_Nine.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		3D6E5BDE1D2DABFB00A668FD = {
 			isa = PBXGroup;
 			children = (
@@ -140,8 +102,6 @@
 				3D6E5C011D2DABFB00A668FD /* Cloudy NineTests */,
 				3D6E5C0C1D2DABFB00A668FD /* Cloudy NineUITests */,
 				3D6E5BE81D2DABFB00A668FD /* Products */,
-				4F19386142C4F49C7BDB726D /* Pods */,
-				18689399E604FF4A33F953B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,11 +118,11 @@
 		3D6E5BE91D2DABFB00A668FD /* Cloudy Nine */ = {
 			isa = PBXGroup;
 			children = (
-				3D6E5BEA1D2DABFB00A668FD /* AppDelegate.swift */,
-				642FB74C1D30208F00E91A1E /* Data model */,
 				642FB75A1D303E1000E91A1E /* Helpers */,
-				642FB74B1D30208900E91A1E /* Other */,
+				3D6E5BEA1D2DABFB00A668FD /* AppDelegate.swift */,
 				642FB74A1D30207900E91A1E /* View controllers */,
+				642FB74B1D30208900E91A1E /* Other */,
+				642FB74C1D30208F00E91A1E /* Data model */,
 				642FB7591D303D9000E91A1E /* Frameworks */,
 			);
 			path = "Cloudy Nine";
@@ -186,21 +146,16 @@
 			path = "Cloudy NineUITests";
 			sourceTree = "<group>";
 		};
-		4F19386142C4F49C7BDB726D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AA5D3614A2F495F211E378F0 /* Pods-Cloudy Nine.debug.xcconfig */,
-				2A2343620CA63EC6E8E0A0B2 /* Pods-Cloudy Nine.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		642FB74A1D30207900E91A1E /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
-				648680AF1D33F3640048CBC6 /* Base */,
-				648680AE1D33F3550048CBC6 /* Main app */,
-				648680AD1D33F34E0048CBC6 /* Onboarding */,
+				3D6E5BEC1D2DABFB00A668FD /* ClothingViewController.swift */,
+				3D6E5BEE1D2DABFB00A668FD /* ClothingViewController.storyboard */,
+				642FB74D1D3020B600E91A1E /* DetailViewController.swift */,
+				642FB74F1D3020D700E91A1E /* DetailViewController.storyboard */,
+				642FB7511D30295700E91A1E /* OnboardingViewController.swift */,
+				642FB7531D30296200E91A1E /* OnboardingViewController.storyboard */,
+				642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */,
 			);
 			name = "View controllers";
 			sourceTree = "<group>";
@@ -236,47 +191,9 @@
 			isa = PBXGroup;
 			children = (
 				642FB75B1D303E1E00E91A1E /* LocationManager.swift */,
-				3D67034F1D304EE80069155E /* OWMAPIClient.swift */,
-				3D6703531D30AC140069155E /* WeatherData.swift */,
-				648680A51D33F1000048CBC6 /* ViewUtils.swift */,
+				642FB75D1D30471000E91A1E /* Geocoder.swift */,
 			);
 			name = Helpers;
-			sourceTree = "<group>";
-		};
-		648680AD1D33F34E0048CBC6 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				642FB7511D30295700E91A1E /* OnboardingViewController.swift */,
-				642FB7531D30296200E91A1E /* OnboardingViewController.storyboard */,
-				648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */,
-				648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */,
-				642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */,
-				648680AB1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard */,
-			);
-			name = Onboarding;
-			sourceTree = "<group>";
-		};
-		648680AE1D33F3550048CBC6 /* Main app */ = {
-			isa = PBXGroup;
-			children = (
-				3D6E5BEC1D2DABFB00A668FD /* MainViewController.swift */,
-				3D6E5BEE1D2DABFB00A668FD /* MainViewController.storyboard */,
-				648680BA1D33F65F0048CBC6 /* EmptyViewController.swift */,
-				648680B81D33F63D0048CBC6 /* EmptyViewController.storyboard */,
-				648680B21D33F5C90048CBC6 /* ClothingViewController.swift */,
-				648680B61D33F6200048CBC6 /* ClothingViewController.storyboard */,
-				642FB74D1D3020B600E91A1E /* DetailViewController.swift */,
-				642FB74F1D3020D700E91A1E /* DetailViewController.storyboard */,
-			);
-			name = "Main app";
-			sourceTree = "<group>";
-		};
-		648680AF1D33F3640048CBC6 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				648680B01D33F3750048CBC6 /* BasePageViewController.swift */,
-			);
-			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,12 +203,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D6E5C121D2DABFB00A668FD /* Build configuration list for PBXNativeTarget "Cloudy Nine" */;
 			buildPhases = (
-				1525EA10CBCD8992DDEE519A /* 📦 Check Pods Manifest.lock */,
 				3D6E5BE31D2DABFB00A668FD /* Sources */,
 				3D6E5BE41D2DABFB00A668FD /* Frameworks */,
 				3D6E5BE51D2DABFB00A668FD /* Resources */,
-				25BB99EC602EBFC607AB5DC7 /* 📦 Embed Pods Frameworks */,
-				C2CA8B3BC79CEA7DE3AA4265 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -388,13 +302,9 @@
 			files = (
 				642FB7501D3020D700E91A1E /* DetailViewController.storyboard in Resources */,
 				3D6E5BF81D2DABFB00A668FD /* LaunchScreen.storyboard in Resources */,
-				648680AA1D33F2920048CBC6 /* WelcomeViewController.storyboard in Resources */,
 				3D6E5BF51D2DABFB00A668FD /* Assets.xcassets in Resources */,
-				648680AC1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard in Resources */,
-				648680B71D33F6200048CBC6 /* ClothingViewController.storyboard in Resources */,
-				648680B91D33F63D0048CBC6 /* EmptyViewController.storyboard in Resources */,
 				642FB7541D30296200E91A1E /* OnboardingViewController.storyboard in Resources */,
-				3D6E5BF01D2DABFB00A668FD /* MainViewController.storyboard in Resources */,
+				3D6E5BF01D2DABFB00A668FD /* ClothingViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,73 +324,19 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1525EA10CBCD8992DDEE519A /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		25BB99EC602EBFC607AB5DC7 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cloudy Nine/Pods-Cloudy Nine-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C2CA8B3BC79CEA7DE3AA4265 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cloudy Nine/Pods-Cloudy Nine-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		3D6E5BE31D2DABFB00A668FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D6E5BED1D2DABFB00A668FD /* MainViewController.swift in Sources */,
-				648680A81D33F26B0048CBC6 /* WelcomeViewController.swift in Sources */,
-				648680B31D33F5C90048CBC6 /* ClothingViewController.swift in Sources */,
+				3D6E5BED1D2DABFB00A668FD /* ClothingViewController.swift in Sources */,
 				642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */,
-				648680A61D33F1000048CBC6 /* ViewUtils.swift in Sources */,
 				642FB7521D30295700E91A1E /* OnboardingViewController.swift in Sources */,
-				648680B11D33F3750048CBC6 /* BasePageViewController.swift in Sources */,
 				3D6E5BF31D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld in Sources */,
 				642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */,
-				3D6703541D30AC140069155E /* WeatherData.swift in Sources */,
 				642FB74E1D3020B600E91A1E /* DetailViewController.swift in Sources */,
 				642FB7491D301FF900E91A1E /* APIKey.swift in Sources */,
-				3D6703501D304EE80069155E /* OWMAPIClient.swift in Sources */,
-				648680BB1D33F65F0048CBC6 /* EmptyViewController.swift in Sources */,
+				642FB75E1D30471000E91A1E /* Geocoder.swift in Sources */,
 				3D6E5BEB1D2DABFB00A668FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,12 +373,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3D6E5BEE1D2DABFB00A668FD /* MainViewController.storyboard */ = {
+		3D6E5BEE1D2DABFB00A668FD /* ClothingViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3D6E5BEF1D2DABFB00A668FD /* Base */,
 			);
-			name = MainViewController.storyboard;
+			name = ClothingViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		3D6E5BF61D2DABFB00A668FD /* LaunchScreen.storyboard */ = {
@@ -623,7 +479,6 @@
 		};
 		3D6E5C131D2DABFB00A668FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA5D3614A2F495F211E378F0 /* Pods-Cloudy Nine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Cloudy Nine/Info.plist";
@@ -635,7 +490,6 @@
 		};
 		3D6E5C141D2DABFB00A668FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A2343620CA63EC6E8E0A0B2 /* Pods-Cloudy Nine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Cloudy Nine/Info.plist";

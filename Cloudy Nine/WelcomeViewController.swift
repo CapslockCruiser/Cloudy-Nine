@@ -1,5 +1,5 @@
 //
-//  ClothingViewController.swift
+//  WelcomeViewController.swift
 //  Cloudy Nine
 //
 //  Created by Michael Pace on 7/11/16.
@@ -8,5 +8,6 @@
 
 import UIKit
 
-class ClothingViewController: UIViewController, LoadableFromStoryboard {}
+class WelcomeViewController: UIViewController, LoadableFromStoryboard {
 
+}
