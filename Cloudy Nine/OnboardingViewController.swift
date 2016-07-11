@@ -8,16 +8,16 @@
 
 import UIKit
 
-class OnboardingViewController: BasePageViewController, LoadableFromStoryboard {
+class OnboardingViewController: BasePageViewController, LoadableFromInterfaceBuilder {
 
     // MARK: UIViewController
 
     override func viewDidLoad() {
-        viewControllers = [
-            WelcomeViewController.loadFromStoryboard(),
-            EnableLocationViewController.loadFromStoryboard()
-        ]
-
         super.viewDidLoad()
+
+        setupPageController([
+            WelcomeViewController.loadFromInterfaceBuilder(),
+            EnableLocationViewController.loadFromInterfaceBuilder()
+        ])
     }
 }

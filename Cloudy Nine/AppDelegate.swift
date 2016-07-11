@@ -20,9 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var initialViewController: UIViewController?
 
         if LocationManager.shared.permissionGranted {
-            initialViewController = MainViewController.loadFromStoryboard()
+            initialViewController = MainViewController.loadFromInterfaceBuilder()
         } else {
-            initialViewController = OnboardingViewController.loadFromStoryboard()
+            initialViewController = OnboardingViewController.loadFromInterfaceBuilder()
         }
 
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
