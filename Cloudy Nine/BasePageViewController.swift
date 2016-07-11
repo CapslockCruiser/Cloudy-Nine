@@ -12,25 +12,20 @@ class BasePageViewController: UIViewController {
 
     // MARK: Private properties
 
-    let pageController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
-    var viewControllers = [UIViewController]()
+    private let pageController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
+    private var viewControllers = [UIViewController]()
+    private var startingPage = 0
 
-    // MARK: UIViewController
+    // MARK: Public API
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func setupPageController(viewControllers: [UIViewController], startingPage: Int = 0) {
+        self.viewControllers = viewControllers
+        self.startingPage = startingPage
 
-        setupPageController()
-    }
-}
-
-// MARK: Private implementation
-
-private extension BasePageViewController {
-    func setupPageController() {
         pageController.dataSource = self
 
-        pageController.setViewControllers(Array(viewControllers.prefix(1)), direction: .Forward, animated: true, completion: nil)
+        let startingViewController = viewControllers[startingPage]
+        pageController.setViewControllers([startingViewController], direction: .Forward, animated: true, completion: nil)
 
         pageController.view.frame = view.bounds
         addChildViewController(pageController)
@@ -67,6 +62,6 @@ extension BasePageViewController: UIPageViewControllerDataSource {
     }
 
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return 0
+        return startingPage
     }
 }

@@ -13,13 +13,13 @@ class MainViewController: BasePageViewController, LoadableFromStoryboard {
     // MARK: UIViewController
 
     override func viewDidLoad() {
-        viewControllers = [
+        super.viewDidLoad()
+
+        setupPageController([
             EmptyViewController.loadFromStoryboard(),
             ClothingViewController.loadFromStoryboard(),
             DetailViewController.loadFromStoryboard()
-        ]
-
-        super.viewDidLoad()
+        ], startingPage: 1)
     }
 
 }
