@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: - LoadableFromInterfaceBuilder
+
 protocol LoadableFromInterfaceBuilder: class {
     static func loadFromInterfaceBuilder<T>() -> T
 }
@@ -34,4 +36,10 @@ extension LoadableFromInterfaceBuilder {
             return result
         }
     }
+}
+
+// MARK: - WeatherDrawing
+
+protocol WeatherDrawing {
+    var weatherViewModel: WeatherViewModel? { get set }
 }

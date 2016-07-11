@@ -19,7 +19,14 @@ class MainViewController: BasePageViewController, LoadableFromInterfaceBuilder {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let calendar = NSCalendar.currentCalendar()
+        let date = NSDate()
+        let components = calendar.components([.Hour], fromDate: date)
+
+        let weatherViewModel = WeatherViewModel(hour: components.hour)
+
         let landscapeView = LandscapeView.loadFromInterfaceBuilder() as LandscapeView
+        landscapeView.weatherViewModel = weatherViewModel
         landscapeView.frame = landscapeContainerView.bounds
         landscapeContainerView.addSubview(landscapeView)
 

@@ -9,6 +9,21 @@
 import UIKit
 
 @IBDesignable
-class LandscapeView: UIView, LoadableFromInterfaceBuilder {
+class LandscapeView: UIView, LoadableFromInterfaceBuilder, WeatherDrawing {
+
+    // MARK: Private properties
+
+    @IBOutlet weak var skyView: SkyView!
+    @IBOutlet weak var groundView: GroundView!
+
+
+    // MARK: Public properties
+
+    var weatherViewModel: WeatherViewModel? {
+        didSet {
+            skyView.weatherViewModel = weatherViewModel
+            groundView.weatherViewModel = weatherViewModel
+        }
+    }
 
 }
