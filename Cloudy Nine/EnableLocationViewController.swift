@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EnableLocationViewController: UIViewController {
+class EnableLocationViewController: UIViewController, LoadableFromStoryboard {
 
 }
 
@@ -26,13 +26,11 @@ private extension EnableLocationViewController {
 
 extension EnableLocationViewController: LocationManagerPermissionDelegate {
     func userDidGrantLocationPermission() {
-        guard
-            let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate,
-            let MainViewController = UIStoryboard(name: "MainViewController", bundle: nil).instantiateInitialViewController() else
-        {
+        guard let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate else {
             return
         }
-        
-        appDelegate.transitionToViewController(MainViewController)
+
+        let mainViewController = MainViewController.loadFromStoryboard() as MainViewController
+        appDelegate.transitionToViewController(mainViewController)
     }
 }

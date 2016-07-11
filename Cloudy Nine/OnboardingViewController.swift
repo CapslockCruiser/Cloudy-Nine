@@ -8,13 +8,13 @@
 
 import UIKit
 
-class OnboardingViewController: UIViewController {
+class OnboardingViewController: UIViewController, LoadableFromStoryboard {
 
     // MARK: Private properties
 
     let pageController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
-    let welcomeViewController = UIStoryboard(name: "OnboardingViewController", bundle: nil).instantiateViewControllerWithIdentifier("WelcomeViewController")
-    let enableLocationViewController = UIStoryboard(name: "OnboardingViewController", bundle: nil).instantiateViewControllerWithIdentifier("EnableLocationViewController")
+    let welcomeViewController: WelcomeViewController = WelcomeViewController.loadFromStoryboard()
+    let enableLocationViewController: EnableLocationViewController = EnableLocationViewController.loadFromStoryboard()
 
     // MARK: UIViewController
 

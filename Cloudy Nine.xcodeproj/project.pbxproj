@@ -23,6 +23,10 @@
 		642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */; };
 		642FB7581D303D4700E91A1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642FB7571D303D4700E91A1E /* CoreLocation.framework */; };
 		642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB75B1D303E1E00E91A1E /* LocationManager.swift */; };
+		648680A61D33F1000048CBC6 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680A51D33F1000048CBC6 /* ViewUtils.swift */; };
+		648680A81D33F26B0048CBC6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */; };
+		648680AA1D33F2920048CBC6 /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */; };
+		648680AC1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680AB1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnableLocationViewController.swift; sourceTree = "<group>"; };
 		642FB7571D303D4700E91A1E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		642FB75B1D303E1E00E91A1E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		648680A51D33F1000048CBC6 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
+		648680AB1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EnableLocationViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +162,9 @@
 				642FB7511D30295700E91A1E /* OnboardingViewController.swift */,
 				642FB7531D30296200E91A1E /* OnboardingViewController.storyboard */,
 				642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */,
+				648680AB1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard */,
+				648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */,
+				648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */,
 			);
 			name = "View controllers";
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				642FB75B1D303E1E00E91A1E /* LocationManager.swift */,
+				648680A51D33F1000048CBC6 /* ViewUtils.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -299,7 +311,9 @@
 			files = (
 				642FB7501D3020D700E91A1E /* DetailViewController.storyboard in Resources */,
 				3D6E5BF81D2DABFB00A668FD /* LaunchScreen.storyboard in Resources */,
+				648680AA1D33F2920048CBC6 /* WelcomeViewController.storyboard in Resources */,
 				3D6E5BF51D2DABFB00A668FD /* Assets.xcassets in Resources */,
+				648680AC1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard in Resources */,
 				642FB7541D30296200E91A1E /* OnboardingViewController.storyboard in Resources */,
 				3D6E5BF01D2DABFB00A668FD /* MainViewController.storyboard in Resources */,
 			);
@@ -327,7 +341,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6E5BED1D2DABFB00A668FD /* MainViewController.swift in Sources */,
+				648680A81D33F26B0048CBC6 /* WelcomeViewController.swift in Sources */,
 				642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */,
+				648680A61D33F1000048CBC6 /* ViewUtils.swift in Sources */,
 				642FB7521D30295700E91A1E /* OnboardingViewController.swift in Sources */,
 				3D6E5BF31D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld in Sources */,
 				642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */,
