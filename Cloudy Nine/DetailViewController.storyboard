@@ -17,18 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzC-ny-as1">
-                                <rect key="frame" x="553" y="28" width="39" height="30"/>
-                                <state key="normal" title="Close"/>
-                                <connections>
-                                    <action selector="closeButtonTapped:" destination="sWe-s9-cSB" eventType="touchUpInside" id="pQ9-d3-b4Q"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Hk-co-5zA">
+                                <rect key="frame" x="32" y="52" width="536" height="516"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWe-17-vaH">
+                                        <rect key="frame" x="246" y="247.5" width="44" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="PWe-17-vaH" firstAttribute="centerX" secondItem="6Hk-co-5zA" secondAttribute="centerX" id="QJF-EA-IZP"/>
+                                    <constraint firstItem="PWe-17-vaH" firstAttribute="centerY" secondItem="6Hk-co-5zA" secondAttribute="centerY" id="UX3-PU-SCc"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0004047529727" green="1" blue="0.47005809430000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DzC-ny-as1" firstAttribute="top" secondItem="k4x-Yu-keU" secondAttribute="bottom" constant="8" id="Gm9-NJ-EWp"/>
-                            <constraint firstAttribute="trailing" secondItem="DzC-ny-as1" secondAttribute="trailing" constant="8" id="hII-4Z-Xee"/>
+                            <constraint firstAttribute="trailing" secondItem="6Hk-co-5zA" secondAttribute="trailing" constant="32" id="70R-RX-xp3"/>
+                            <constraint firstItem="dQc-Zi-Iny" firstAttribute="top" secondItem="6Hk-co-5zA" secondAttribute="bottom" constant="32" id="8ji-z4-NC7"/>
+                            <constraint firstItem="6Hk-co-5zA" firstAttribute="top" secondItem="k4x-Yu-keU" secondAttribute="bottom" constant="32" id="OlQ-C2-NbN"/>
+                            <constraint firstItem="6Hk-co-5zA" firstAttribute="leading" secondItem="GMU-JT-7mo" secondAttribute="leading" constant="32" id="quc-HJ-nHh"/>
                         </constraints>
                     </view>
                 </viewController>
