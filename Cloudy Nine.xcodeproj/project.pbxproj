@@ -27,6 +27,8 @@
 		642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */; };
 		642FB7581D303D4700E91A1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642FB7571D303D4700E91A1E /* CoreLocation.framework */; };
 		642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB75B1D303E1E00E91A1E /* LocationManager.swift */; };
+		646D12DD1D34225A00017625 /* LandscapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D12DC1D34225A00017625 /* LandscapeView.swift */; };
+		646D12DF1D3423E700017625 /* LandscapeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646D12DE1D3423E700017625 /* LandscapeView.xib */; };
 		648680A61D33F1000048CBC6 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680A51D33F1000048CBC6 /* ViewUtils.swift */; };
 		648680A81D33F26B0048CBC6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */; };
 		648680AA1D33F2920048CBC6 /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */; };
@@ -83,6 +85,8 @@
 		642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnableLocationViewController.swift; sourceTree = "<group>"; };
 		642FB7571D303D4700E91A1E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		642FB75B1D303E1E00E91A1E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		646D12DC1D34225A00017625 /* LandscapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeView.swift; sourceTree = "<group>"; };
+		646D12DE1D3423E700017625 /* LandscapeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandscapeView.xib; sourceTree = "<group>"; };
 		648680A51D33F1000048CBC6 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 				642FB75A1D303E1000E91A1E /* Helpers */,
 				642FB74B1D30208900E91A1E /* Other */,
 				642FB74A1D30207900E91A1E /* View controllers */,
+				646D12DB1D34224200017625 /* Landscape */,
 				642FB7591D303D9000E91A1E /* Frameworks */,
 			);
 			path = "Cloudy Nine";
@@ -240,6 +245,15 @@
 				648680A51D33F1000048CBC6 /* ViewUtils.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		646D12DB1D34224200017625 /* Landscape */ = {
+			isa = PBXGroup;
+			children = (
+				646D12DC1D34225A00017625 /* LandscapeView.swift */,
+				646D12DE1D3423E700017625 /* LandscapeView.xib */,
+			);
+			name = Landscape;
 			sourceTree = "<group>";
 		};
 		648680AD1D33F34E0048CBC6 /* Onboarding */ = {
@@ -391,6 +405,7 @@
 				648680AA1D33F2920048CBC6 /* WelcomeViewController.storyboard in Resources */,
 				3D6E5BF51D2DABFB00A668FD /* Assets.xcassets in Resources */,
 				648680AC1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard in Resources */,
+				646D12DF1D3423E700017625 /* LandscapeView.xib in Resources */,
 				648680B91D33F63D0048CBC6 /* EmptyViewController.storyboard in Resources */,
 				642FB7541D30296200E91A1E /* OnboardingViewController.storyboard in Resources */,
 				3D6E5BF01D2DABFB00A668FD /* MainViewController.storyboard in Resources */,
@@ -470,6 +485,7 @@
 				648680A81D33F26B0048CBC6 /* WelcomeViewController.swift in Sources */,
 				648680B31D33F5C90048CBC6 /* ClothingViewController.swift in Sources */,
 				642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */,
+				646D12DD1D34225A00017625 /* LandscapeView.swift in Sources */,
 				648680A61D33F1000048CBC6 /* ViewUtils.swift in Sources */,
 				642FB7521D30295700E91A1E /* OnboardingViewController.swift in Sources */,
 				648680B11D33F3750048CBC6 /* BasePageViewController.swift in Sources */,

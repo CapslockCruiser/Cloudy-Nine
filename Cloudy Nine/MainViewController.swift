@@ -8,17 +8,25 @@
 
 import UIKit
 
-class MainViewController: BasePageViewController, LoadableFromStoryboard {
+class MainViewController: BasePageViewController, LoadableFromInterfaceBuilder {
+
+    // MARK: Private properties
+
+    @IBOutlet private weak var landscapeContainerView: UIView!
 
     // MARK: UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let landscapeView = LandscapeView.loadFromInterfaceBuilder() as LandscapeView
+        landscapeView.frame = landscapeContainerView.bounds
+        landscapeContainerView.addSubview(landscapeView)
+
         setupPageController([
-            EmptyViewController.loadFromStoryboard(),
-            ClothingViewController.loadFromStoryboard(),
-            DetailViewController.loadFromStoryboard()
+            EmptyViewController.loadFromInterfaceBuilder(),
+            ClothingViewController.loadFromInterfaceBuilder(),
+            DetailViewController.loadFromInterfaceBuilder()
         ], startingPage: 1)
     }
 

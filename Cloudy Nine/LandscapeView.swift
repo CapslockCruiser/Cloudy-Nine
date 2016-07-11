@@ -1,5 +1,5 @@
 //
-//  ClothingViewController.swift
+//  LandscapeView.swift
 //  Cloudy Nine
 //
 //  Created by Michael Pace on 7/11/16.
@@ -8,5 +8,7 @@
 
 import UIKit
 
-class ClothingViewController: UIViewController, LoadableFromInterfaceBuilder {}
+@IBDesignable
+class LandscapeView: UIView, LoadableFromInterfaceBuilder {
 
+}

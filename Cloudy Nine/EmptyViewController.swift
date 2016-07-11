@@ -8,4 +8,4 @@
 
 import UIKit
 
-class EmptyViewController: UIViewController, LoadableFromStoryboard {}
+class EmptyViewController: UIViewController, LoadableFromInterfaceBuilder {}

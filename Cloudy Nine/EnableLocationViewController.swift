@@ -8,9 +8,7 @@
 
 import UIKit
 
-class EnableLocationViewController: UIViewController, LoadableFromStoryboard {
-
-}
+class EnableLocationViewController: UIViewController, LoadableFromInterfaceBuilder {}
 
 // MARK: Private implementation
 
@@ -30,7 +28,7 @@ extension EnableLocationViewController: LocationManagerPermissionDelegate {
             return
         }
 
-        let mainViewController = MainViewController.loadFromStoryboard() as MainViewController
+        let mainViewController = MainViewController.loadFromInterfaceBuilder() as MainViewController
         appDelegate.transitionToViewController(mainViewController)
     }
 }

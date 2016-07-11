@@ -8,6 +8,6 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController, LoadableFromStoryboard {
+class WelcomeViewController: UIViewController, LoadableFromInterfaceBuilder {
 
 }
