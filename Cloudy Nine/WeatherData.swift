@@ -13,6 +13,9 @@ class WeatherData{
     var description: String?
     var currentTemp: Double?
     
-    var windSpeed: Double?
-    var cloudPercentage: Double?
+//    var windSpeed: Double?
+//    var cloudPercentage: Double?
+    
+    var minTemp: Double?
+    var maxTemp: Double?
 }

@@ -14,6 +14,7 @@ class ClothingViewController: UIViewController {
 
     @IBOutlet private weak var titleLabel: UINavigationItem!
     @IBOutlet private weak var detailsButton: UIBarButtonItem!
+    var weatherData: [WeatherData]! = []
 
     // MARK: UIViewController
 
@@ -26,6 +27,12 @@ class ClothingViewController: UIViewController {
             name: LocationManager.LocationUpdateNotificationName,
             object: nil
         )
+        
+        //Test OWMAPIClient below
+        let location = Location(lat: 29.7, lon: 95.36, city: nil)
+        OWMAPIClient.shared.getWeather(location, success: { weatherData in
+            self.weatherData = weatherData
+        })
     }
 
     deinit {
@@ -38,7 +45,7 @@ class ClothingViewController: UIViewController {
 private extension ClothingViewController {
     @objc func userDidUpdateLocation(notification: NSNotification) {
         let location = LocationManager.shared.location
-
+        
         titleLabel.title = location?.city
     }
 }
