@@ -27,6 +27,11 @@
 		648680A81D33F26B0048CBC6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */; };
 		648680AA1D33F2920048CBC6 /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */; };
 		648680AC1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680AB1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard */; };
+		648680B11D33F3750048CBC6 /* BasePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680B01D33F3750048CBC6 /* BasePageViewController.swift */; };
+		648680B31D33F5C90048CBC6 /* ClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680B21D33F5C90048CBC6 /* ClothingViewController.swift */; };
+		648680B71D33F6200048CBC6 /* ClothingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680B61D33F6200048CBC6 /* ClothingViewController.storyboard */; };
+		648680B91D33F63D0048CBC6 /* EmptyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680B81D33F63D0048CBC6 /* EmptyViewController.storyboard */; };
+		648680BB1D33F65F0048CBC6 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680BA1D33F65F0048CBC6 /* EmptyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,11 @@
 		648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
 		648680AB1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EnableLocationViewController.storyboard; sourceTree = "<group>"; };
+		648680B01D33F3750048CBC6 /* BasePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePageViewController.swift; sourceTree = "<group>"; };
+		648680B21D33F5C90048CBC6 /* ClothingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingViewController.swift; sourceTree = "<group>"; };
+		648680B61D33F6200048CBC6 /* ClothingViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClothingViewController.storyboard; sourceTree = "<group>"; };
+		648680B81D33F63D0048CBC6 /* EmptyViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EmptyViewController.storyboard; sourceTree = "<group>"; };
+		648680BA1D33F65F0048CBC6 /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,16 +165,9 @@
 		642FB74A1D30207900E91A1E /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3D6E5BEC1D2DABFB00A668FD /* MainViewController.swift */,
-				3D6E5BEE1D2DABFB00A668FD /* MainViewController.storyboard */,
-				642FB74D1D3020B600E91A1E /* DetailViewController.swift */,
-				642FB74F1D3020D700E91A1E /* DetailViewController.storyboard */,
-				642FB7511D30295700E91A1E /* OnboardingViewController.swift */,
-				642FB7531D30296200E91A1E /* OnboardingViewController.storyboard */,
-				642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */,
-				648680AB1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard */,
-				648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */,
-				648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */,
+				648680AF1D33F3640048CBC6 /* Base */,
+				648680AE1D33F3550048CBC6 /* Main app */,
+				648680AD1D33F34E0048CBC6 /* Onboarding */,
 			);
 			name = "View controllers";
 			sourceTree = "<group>";
@@ -203,6 +206,42 @@
 				648680A51D33F1000048CBC6 /* ViewUtils.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		648680AD1D33F34E0048CBC6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				642FB7511D30295700E91A1E /* OnboardingViewController.swift */,
+				642FB7531D30296200E91A1E /* OnboardingViewController.storyboard */,
+				648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */,
+				648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */,
+				642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */,
+				648680AB1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		648680AE1D33F3550048CBC6 /* Main app */ = {
+			isa = PBXGroup;
+			children = (
+				3D6E5BEC1D2DABFB00A668FD /* MainViewController.swift */,
+				3D6E5BEE1D2DABFB00A668FD /* MainViewController.storyboard */,
+				648680BA1D33F65F0048CBC6 /* EmptyViewController.swift */,
+				648680B81D33F63D0048CBC6 /* EmptyViewController.storyboard */,
+				648680B21D33F5C90048CBC6 /* ClothingViewController.swift */,
+				648680B61D33F6200048CBC6 /* ClothingViewController.storyboard */,
+				642FB74D1D3020B600E91A1E /* DetailViewController.swift */,
+				642FB74F1D3020D700E91A1E /* DetailViewController.storyboard */,
+			);
+			name = "Main app";
+			sourceTree = "<group>";
+		};
+		648680AF1D33F3640048CBC6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				648680B01D33F3750048CBC6 /* BasePageViewController.swift */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +353,8 @@
 				648680AA1D33F2920048CBC6 /* WelcomeViewController.storyboard in Resources */,
 				3D6E5BF51D2DABFB00A668FD /* Assets.xcassets in Resources */,
 				648680AC1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard in Resources */,
+				648680B71D33F6200048CBC6 /* ClothingViewController.storyboard in Resources */,
+				648680B91D33F63D0048CBC6 /* EmptyViewController.storyboard in Resources */,
 				642FB7541D30296200E91A1E /* OnboardingViewController.storyboard in Resources */,
 				3D6E5BF01D2DABFB00A668FD /* MainViewController.storyboard in Resources */,
 			);
@@ -342,13 +383,16 @@
 			files = (
 				3D6E5BED1D2DABFB00A668FD /* MainViewController.swift in Sources */,
 				648680A81D33F26B0048CBC6 /* WelcomeViewController.swift in Sources */,
+				648680B31D33F5C90048CBC6 /* ClothingViewController.swift in Sources */,
 				642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */,
 				648680A61D33F1000048CBC6 /* ViewUtils.swift in Sources */,
 				642FB7521D30295700E91A1E /* OnboardingViewController.swift in Sources */,
+				648680B11D33F3750048CBC6 /* BasePageViewController.swift in Sources */,
 				3D6E5BF31D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld in Sources */,
 				642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */,
 				642FB74E1D3020B600E91A1E /* DetailViewController.swift in Sources */,
 				642FB7491D301FF900E91A1E /* APIKey.swift in Sources */,
+				648680BB1D33F65F0048CBC6 /* EmptyViewController.swift in Sources */,
 				3D6E5BEB1D2DABFB00A668FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
