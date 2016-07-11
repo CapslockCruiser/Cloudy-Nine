@@ -18,7 +18,7 @@ class MainViewController: BasePageViewController, LoadableFromStoryboard {
             ClothingViewController.loadFromStoryboard(),
             DetailViewController.loadFromStoryboard()
         ]
-
+    
         super.viewDidLoad()
     }
 

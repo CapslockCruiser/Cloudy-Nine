@@ -58,9 +58,12 @@ class OWMAPIClient{
             }
             if let response = response as? NSHTTPURLResponse{
                 if (response.statusCode == 200){
+                    var temp: [Double] = []
                     let json = JSON(data: data!)
-                    for i in 0..<5{
-                        
+                    for hour in json["list"]{
+                        print(hour.0)
+                        print(hour.1)
+                        print(temp)
                     }
                 }else{
                     print("HTTP response code: \(response.statusCode)")

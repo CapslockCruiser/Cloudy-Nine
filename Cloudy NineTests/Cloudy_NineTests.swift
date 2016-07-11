@@ -11,6 +11,8 @@ import XCTest
 
 class Cloudy_NineTests: XCTestCase {
     
+    var weatherData: [WeatherData] = []
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -19,6 +21,17 @@ class Cloudy_NineTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+    }
+    
+    func testOWMAPIClientResults(){
+        let location = Location(lat: 29.7, lon: 95.4, city: nil)
+        
+        
+        OWMAPIClient.shared.getWeather(location, success: { weatherData in
+            self.weatherData = weatherData
+        })
+        
+        XCTAssert(true)
     }
     
     func testExample() {
