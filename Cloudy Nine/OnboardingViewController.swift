@@ -13,11 +13,11 @@ class OnboardingViewController: BasePageViewController, LoadableFromStoryboard {
     // MARK: UIViewController
 
     override func viewDidLoad() {
-        viewControllers = [
+        super.viewDidLoad()
+
+        setupPageController([
             WelcomeViewController.loadFromStoryboard(),
             EnableLocationViewController.loadFromStoryboard()
-        ]
-
-        super.viewDidLoad()
+        ])
     }
 }
