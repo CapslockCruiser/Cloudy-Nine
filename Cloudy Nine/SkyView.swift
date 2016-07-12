@@ -15,6 +15,10 @@ class SkyView: UIView, LoadableFromInterfaceBuilder, WeatherDrawing {
 
     var weatherViewModel: WeatherViewModel?
 
+    // MARK: Private properties
+
+    private let cloudGenerator = CloudGenerator()
+
     // MARK: UIView
 
     override func drawRect(rect: CGRect) {
@@ -41,6 +45,22 @@ class SkyView: UIView, LoadableFromInterfaceBuilder, WeatherDrawing {
         let path = UIBezierPath(rect: rect)
         color?.setFill()
         path.fill()
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        let cloudCount = 3
+        for x in 0..<cloudCount {
+            let cloud = cloudGenerator.generateCloud(color: UIColor.whiteColor())
+            let imageView = UIImageView(image: cloud)
+            imageView.frame = CGRect(
+                x: CGFloat(x) * (bounds.width / CGFloat(cloudCount)) - (bounds.width / CGFloat(cloudCount)),
+                y: CGFloat(randomInt(lower: 0, upper: Int(bounds.size.height) / cloudCount)),
+                width: imageView.bounds.width,
+                height: imageView.bounds.height)
+            addSubview(imageView)
+        }
     }
 
 }
