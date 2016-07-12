@@ -22,8 +22,24 @@ class SkyView: UIView, LoadableFromInterfaceBuilder, WeatherDrawing {
             return
         }
 
+        // TODO: hit http://sunrise-sunset.org/api to get these values for user's location?
+        // TODO: move this stuff into a testable view model?
+        let sunriseHour = 7
+        let sunsetHour = 21
+
+        var color: UIColor?
+        switch weatherViewModel.hour {
+        case let h where h < sunriseHour || h > sunsetHour:
+            color = UIColor.blackColor()
+        default:
+            let sunnyDuration = CGFloat(sunsetHour - sunriseHour)
+            let currentSunnyPercentage = CGFloat(weatherViewModel.hour - sunriseHour) / sunnyDuration
+            let proximityToMidday = abs(currentSunnyPercentage - 0.5)  // 0 is midday, 1.0 is sunrise or sunset
+            color = UIColor(red: proximityToMidday, green: 0.3, blue: 1.0 - proximityToMidday, alpha: 1.0)
+        }
+
         let path = UIBezierPath(rect: rect)
-        UIColor(red: 0.5, green: 0.3, blue: CGFloat(weatherViewModel.hour) / 24.0, alpha: 1.0).setFill()
+        color?.setFill()
         path.fill()
     }
 
