@@ -8,5 +8,5 @@
 
 import UIKit
 
-class ClothingViewController: UIViewController, LoadableFromStoryboard {}
+class ClothingViewController: UIViewController, LoadableFromInterfaceBuilder {}
 

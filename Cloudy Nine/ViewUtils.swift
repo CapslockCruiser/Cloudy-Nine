@@ -8,20 +8,38 @@
 
 import UIKit
 
-protocol LoadableFromStoryboard: class {
-    static func loadFromStoryboard<T>() -> T
+// MARK: - LoadableFromInterfaceBuilder
+
+protocol LoadableFromInterfaceBuilder: class {
+    static func loadFromInterfaceBuilder<T>() -> T
 }
 
-extension LoadableFromStoryboard {
-    static func loadFromStoryboard<T>() -> T {
-        let storyboardName = String(self)
+extension LoadableFromInterfaceBuilder {
+    static func loadFromInterfaceBuilder<T>() -> T {
+        let interfaceBuilderDocumentName = String(self)
 
-        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        if self is UIView.Type {
+            let nib = UINib(nibName: interfaceBuilderDocumentName, bundle: nil)
 
-        guard let result = storyboard.instantiateInitialViewController() as? T else {
-            fatalError("Error loading storyboard with name \(storyboardName)")
+            guard let result = nib.instantiateWithOwner(nil, options: nil).first as? T else {
+                fatalError("Error loading nib with name \(interfaceBuilderDocumentName)")
+            }
+
+            return result
+        } else {
+            let storyboard = UIStoryboard(name: interfaceBuilderDocumentName, bundle: nil)
+
+            guard let result = storyboard.instantiateInitialViewController() as? T else {
+                fatalError("Error loading storyboard with name \(interfaceBuilderDocumentName)")
+            }
+            
+            return result
         }
-
-        return result
     }
+}
+
+// MARK: - WeatherDrawing
+
+protocol WeatherDrawing {
+    var weatherViewModel: WeatherViewModel? { get set }
 }

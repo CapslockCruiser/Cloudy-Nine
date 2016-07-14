@@ -27,6 +27,13 @@
 		642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */; };
 		642FB7581D303D4700E91A1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642FB7571D303D4700E91A1E /* CoreLocation.framework */; };
 		642FB75C1D303E1E00E91A1E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642FB75B1D303E1E00E91A1E /* LocationManager.swift */; };
+		646D12DD1D34225A00017625 /* LandscapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D12DC1D34225A00017625 /* LandscapeView.swift */; };
+		646D12DF1D3423E700017625 /* LandscapeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646D12DE1D3423E700017625 /* LandscapeView.xib */; };
+		646D12E11D34255A00017625 /* SkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D12E01D34255A00017625 /* SkyView.swift */; };
+		646D12E31D34256200017625 /* SkyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646D12E21D34256200017625 /* SkyView.xib */; };
+		646D12E51D34256A00017625 /* GroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 646D12E41D34256A00017625 /* GroundView.xib */; };
+		646D12E71D34257400017625 /* GroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D12E61D34257400017625 /* GroundView.swift */; };
+		646D12E91D342A9500017625 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D12E81D342A9500017625 /* WeatherViewModel.swift */; };
 		648680A61D33F1000048CBC6 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680A51D33F1000048CBC6 /* ViewUtils.swift */; };
 		648680A81D33F26B0048CBC6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */; };
 		648680AA1D33F2920048CBC6 /* WelcomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */; };
@@ -35,6 +42,9 @@
 		648680B31D33F5C90048CBC6 /* ClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680B21D33F5C90048CBC6 /* ClothingViewController.swift */; };
 		648680B91D33F63D0048CBC6 /* EmptyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648680B81D33F63D0048CBC6 /* EmptyViewController.storyboard */; };
 		648680BB1D33F65F0048CBC6 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648680BA1D33F65F0048CBC6 /* EmptyViewController.swift */; };
+		64FC2DF11D356BE200610540 /* CloudGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FC2DF01D356BE200610540 /* CloudGenerator.swift */; };
+		64FC2DF51D356C3F00610540 /* DrawingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FC2DF41D356C3F00610540 /* DrawingUtils.swift */; };
+		64FC2DF81D356E4300610540 /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FC2DF71D356E4300610540 /* MathUtils.swift */; };
 		90748AE2D37AFF32BC4C15D2 /* Pods_Cloudy_Nine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EDE7F3C07CA46372FC8D04 /* Pods_Cloudy_Nine.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +93,13 @@
 		642FB7551D302E2800E91A1E /* EnableLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnableLocationViewController.swift; sourceTree = "<group>"; };
 		642FB7571D303D4700E91A1E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		642FB75B1D303E1E00E91A1E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		646D12DC1D34225A00017625 /* LandscapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeView.swift; sourceTree = "<group>"; };
+		646D12DE1D3423E700017625 /* LandscapeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandscapeView.xib; sourceTree = "<group>"; };
+		646D12E01D34255A00017625 /* SkyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyView.swift; sourceTree = "<group>"; };
+		646D12E21D34256200017625 /* SkyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkyView.xib; sourceTree = "<group>"; };
+		646D12E41D34256A00017625 /* GroundView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroundView.xib; sourceTree = "<group>"; };
+		646D12E61D34257400017625 /* GroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroundView.swift; sourceTree = "<group>"; };
+		646D12E81D342A9500017625 /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		648680A51D33F1000048CBC6 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		648680A71D33F26B0048CBC6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		648680A91D33F2920048CBC6 /* WelcomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WelcomeViewController.storyboard; sourceTree = "<group>"; };
@@ -91,6 +108,9 @@
 		648680B21D33F5C90048CBC6 /* ClothingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingViewController.swift; sourceTree = "<group>"; };
 		648680B81D33F63D0048CBC6 /* EmptyViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EmptyViewController.storyboard; sourceTree = "<group>"; };
 		648680BA1D33F65F0048CBC6 /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		64FC2DF01D356BE200610540 /* CloudGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudGenerator.swift; sourceTree = "<group>"; };
+		64FC2DF41D356C3F00610540 /* DrawingUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingUtils.swift; sourceTree = "<group>"; };
+		64FC2DF71D356E4300610540 /* MathUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
 		AA5D3614A2F495F211E378F0 /* Pods-Cloudy Nine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cloudy Nine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cloudy Nine/Pods-Cloudy Nine.debug.xcconfig"; sourceTree = "<group>"; };
 		B3EDE7F3C07CA46372FC8D04 /* Pods_Cloudy_Nine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cloudy_Nine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,8 +180,10 @@
 				3D6E5BEA1D2DABFB00A668FD /* AppDelegate.swift */,
 				642FB74C1D30208F00E91A1E /* Data model */,
 				642FB75A1D303E1000E91A1E /* Helpers */,
+				64FC2DF21D356C1B00610540 /* Networking */,
 				642FB74B1D30208900E91A1E /* Other */,
 				642FB74A1D30207900E91A1E /* View controllers */,
+				646D12DB1D34224200017625 /* Landscape */,
 				642FB7591D303D9000E91A1E /* Frameworks */,
 			);
 			path = "Cloudy Nine";
@@ -219,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				3D6E5BF11D2DABFB00A668FD /* Cloudy_Nine.xcdatamodeld */,
+				646D12E81D342A9500017625 /* WeatherViewModel.swift */,
 			);
 			name = "Data model";
 			sourceTree = "<group>";
@@ -234,12 +257,27 @@
 		642FB75A1D303E1000E91A1E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				64FC2DF41D356C3F00610540 /* DrawingUtils.swift */,
 				642FB75B1D303E1E00E91A1E /* LocationManager.swift */,
-				3D67034F1D304EE80069155E /* OWMAPIClient.swift */,
 				3D6703531D30AC140069155E /* WeatherData.swift */,
 				648680A51D33F1000048CBC6 /* ViewUtils.swift */,
+				64FC2DF71D356E4300610540 /* MathUtils.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		646D12DB1D34224200017625 /* Landscape */ = {
+			isa = PBXGroup;
+			children = (
+				646D12DC1D34225A00017625 /* LandscapeView.swift */,
+				646D12DE1D3423E700017625 /* LandscapeView.xib */,
+				646D12E01D34255A00017625 /* SkyView.swift */,
+				646D12E21D34256200017625 /* SkyView.xib */,
+				646D12E61D34257400017625 /* GroundView.swift */,
+				646D12E41D34256A00017625 /* GroundView.xib */,
+				64FC2DF01D356BE200610540 /* CloudGenerator.swift */,
+			);
+			name = Landscape;
 			sourceTree = "<group>";
 		};
 		648680AD1D33F34E0048CBC6 /* Onboarding */ = {
@@ -276,6 +314,14 @@
 				648680B01D33F3750048CBC6 /* BasePageViewController.swift */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		64FC2DF21D356C1B00610540 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3D67034F1D304EE80069155E /* OWMAPIClient.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,7 +436,10 @@
 				3D4EB7371D3403B400D366F5 /* ClothingViewController.storyboard in Resources */,
 				648680AA1D33F2920048CBC6 /* WelcomeViewController.storyboard in Resources */,
 				3D6E5BF51D2DABFB00A668FD /* Assets.xcassets in Resources */,
+				646D12E51D34256A00017625 /* GroundView.xib in Resources */,
 				648680AC1D33F2AB0048CBC6 /* EnableLocationViewController.storyboard in Resources */,
+				646D12E31D34256200017625 /* SkyView.xib in Resources */,
+				646D12DF1D3423E700017625 /* LandscapeView.xib in Resources */,
 				648680B91D33F63D0048CBC6 /* EmptyViewController.storyboard in Resources */,
 				642FB7541D30296200E91A1E /* OnboardingViewController.storyboard in Resources */,
 				3D6E5BF01D2DABFB00A668FD /* MainViewController.storyboard in Resources */,
@@ -467,9 +516,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6E5BED1D2DABFB00A668FD /* MainViewController.swift in Sources */,
+				64FC2DF51D356C3F00610540 /* DrawingUtils.swift in Sources */,
 				648680A81D33F26B0048CBC6 /* WelcomeViewController.swift in Sources */,
 				648680B31D33F5C90048CBC6 /* ClothingViewController.swift in Sources */,
 				642FB7561D302E2800E91A1E /* EnableLocationViewController.swift in Sources */,
+				646D12DD1D34225A00017625 /* LandscapeView.swift in Sources */,
+				64FC2DF11D356BE200610540 /* CloudGenerator.swift in Sources */,
+				646D12E71D34257400017625 /* GroundView.swift in Sources */,
+				646D12E11D34255A00017625 /* SkyView.swift in Sources */,
+				64FC2DF81D356E4300610540 /* MathUtils.swift in Sources */,
 				648680A61D33F1000048CBC6 /* ViewUtils.swift in Sources */,
 				642FB7521D30295700E91A1E /* OnboardingViewController.swift in Sources */,
 				648680B11D33F3750048CBC6 /* BasePageViewController.swift in Sources */,
@@ -478,6 +533,7 @@
 				3D6703541D30AC140069155E /* WeatherData.swift in Sources */,
 				642FB74E1D3020B600E91A1E /* DetailViewController.swift in Sources */,
 				642FB7491D301FF900E91A1E /* APIKey.swift in Sources */,
+				646D12E91D342A9500017625 /* WeatherViewModel.swift in Sources */,
 				3D6703501D304EE80069155E /* OWMAPIClient.swift in Sources */,
 				648680BB1D33F65F0048CBC6 /* EmptyViewController.swift in Sources */,
 				3D6E5BEB1D2DABFB00A668FD /* AppDelegate.swift in Sources */,

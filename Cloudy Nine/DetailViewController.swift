@@ -8,4 +8,4 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, LoadableFromStoryboard {}
+class DetailViewController: UIViewController, LoadableFromInterfaceBuilder {}

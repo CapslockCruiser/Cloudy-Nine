@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OnboardingViewController: BasePageViewController, LoadableFromStoryboard {
+class OnboardingViewController: BasePageViewController, LoadableFromInterfaceBuilder {
 
     // MARK: UIViewController
 
@@ -16,8 +16,8 @@ class OnboardingViewController: BasePageViewController, LoadableFromStoryboard {
         super.viewDidLoad()
 
         setupPageController([
-            WelcomeViewController.loadFromStoryboard(),
-            EnableLocationViewController.loadFromStoryboard()
+            WelcomeViewController.loadFromInterfaceBuilder(),
+            EnableLocationViewController.loadFromInterfaceBuilder()
         ])
     }
 }
